@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formi</title>
+    <link rel="stylesheet" href="../Dobuliak/css/style.css">
+    
+</head>
+<body class="for">
+ 
+
+ 
+  <form action="formi.html">
+  <span><i>Пожалуйста, Заполните форму! Обязательные поля помечены</i><em>*</em></span>
+  <fieldset>
+    <legend>Контактная информация</legend>
+      <label for="name">Фамилия<em>*</em></label>
+      <input id="name" placeholder="Голомозый" autofocus required pattern="\S+[А-яа-я]"><br>
+      <label for="givenname">Имя<em>*</em></label>
+      <input id="givenname" placeholder="Тарас" required pattern="\S+[А-яа-я]"><br>
+      <label for="patronym">Отчество</label>
+      <input id="patronym" placeholder="Сидорович" pattern="\S+[А-яа-я]"><br>
+      <label for="telephone">Телефон<em>*</em></label>
+      <input id="telephone" placeholder="+7-922-222-55-55" required><br>
+    <legend>Персональная информация</legend>      <label for="email">Email<em>*</em></label>
+      <input id="email" placeholder="Geek@brains.com" required pattern="\S+@[a-z]+.[a-z]+"><br>
+  </fieldset>
+     <fieldset>
+      <legend>Персональная информация</legend>
+      <label for="age">Возраст<em>*</em></label> <input id="age" type="number" required min="14" max="100"><br>
+      <label for="gender">Пол</label>
+      <select id="gender">
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select><br>
+      <label for="comments"> Дополнительная информация </label>
+      <textarea id="comments"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Выберите ваши увлечения</legend>
+    <label for="sport"><input id="sport" type="checkbox">Спорт</label>
+    <label for="turist"><input id="turist" type="checkbox">Туризм</label>
+    <label for="disko"><input id="disko" type="checkbox">ДИСКО</label>
+    <label for="auto"><input id="auto" type="checkbox">Автомобили</label>
+    <label for="it"><input id="it" type="checkbox">IT</label>
+  </fieldset>
+      <span><input type="submit" value="ОТПРАВИТЬ"></span>
+</form>
+         <div class="formi">
+           <form action="formi.html">
+               <input id="login" placeholder="Логин">
+               <input id="password" placeholder="Пароль">
+               
+               <a href="#"><input type="submit" value="ВОЙТИ"></a>
+           </form>
+           
+         </div>    
+
+    
+</body>
+</html>
